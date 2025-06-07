@@ -1,0 +1,139 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.quote {
+  font-size: 16px;
+  color: #777;
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.left-section input,
+.left-section select {
+  width: 100%;
+  padding: 8px 10px;
+  height: 38px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.left-section button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear-btn {
+  margin-bottom: 20px;
+  background-color: #e53935;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.right-section h2 {
+  margin-top: 30px;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.right-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-section li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-left: 6px solid #2196f3;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priority {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.high { color: #e53935; }
+.medium { color: #fbc02d; }
+.low { color: #43a047; }
+
+li.done-task {
+  background-color: #e0f7e9;
+  text-decoration: line-through;
+  color: #777;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 16px;
+  color: #555;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.stats span {
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 10px;
+}

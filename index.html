@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bayan’s To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Bayan’s To-Do List</h1>
+      <p class="quote">Tiny steps now, massive wins later.</p>
+    </header>
+
+    <main>
+      <div class="left-section">
+        <h2>Add a Task</h2>
+        <input type="text" id="taskInput" placeholder="Enter your task..." />
+
+        <label for="priority">Priority:</label>
+        <select id="priority">
+          <option value="high">🔴 High</option>
+          <option value="medium" selected>🟡 Medium</option>
+          <option value="low">🟢 Low</option>
+        </select>
+
+        <button id="addTask">Add Task</button>
+      </div>
+
+      <div class="right-section">
+        <button id="clearAll" class="clear-btn">🗑️ Clear All Tasks</button>
+
+        <h2>Ongoing Tasks</h2>
+        <ul id="ongoingList"></ul>
+
+        <h2>Done Tasks</h2>
+        <ul id="doneList"></ul>
+      </div>
+    </main>
+
+    <div class="stats bottom-stats">
+      <span id="totalTasks">Total: 0</span>
+      <span id="ongoingTasks">Ongoing: 0</span>
+      <span id="doneTasks">Done: 0</span>
+    </div>
+
+    <footer>
+      <p>Designed & Developed by Bayan Abdullah – 2025</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
